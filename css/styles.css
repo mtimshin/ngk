@@ -1526,6 +1526,16 @@ li {
 
 /* PRODUCT */
 
+.view-slider {
+    padding-top: 50px;
+}
+
+@media (max-width: 1070px) {
+    .view-slider {
+        padding-top: 0px;
+    }
+}
+
 .product {
     display: flex;
     padding-top: 30px;
