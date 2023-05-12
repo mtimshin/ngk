@@ -305,10 +305,11 @@ body {
 
 @media (max-width: 1070px) {
     .container {
-        max-width: 768px;
+        width: 320px;
         padding: 0 12px;
         margin: 0 auto;
         overflow: hidden;
+        box-sizing: border-box;
     }
 }
 
