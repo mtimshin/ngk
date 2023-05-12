@@ -16,36 +16,6 @@ window.addEventListener('scroll', function() {
 
 
 
-// Работа input file
-const input = document.querySelector('.input-file input[type=file]');
-input.addEventListener('change', function() {
-  const file = this.files[0];
-  this.closest('.input-file').querySelector('.input-file-text').innerHTML = file.name;
-});
-
-
-// Свайпер слайдер
-const articleSlider = new Swiper('.article__swiper-container', {
-  navigation: {
-      nextEl: '.slider-article_next',
-      prevEl: '.slider-article_prev'
-  },
-  pagination: {
-      el: '.swiper-pagination_article',
-      clickable: true,
-  },
-  breakpoints: {
-      900: {
-          slidesPerView: 1,
-      },
-      1070: {
-        slidesPerView: 1,
-      },
-  },
-  loop: true,
-  slidesPerGroup: 1,
-});
-
 // Прилипающее меню моб
 const header = document.querySelector('.header-mob');
 window.addEventListener('scroll', () => {

@@ -58,7 +58,7 @@
     </div>
     <!-- Конец "Прилипающее меню" -->
 
-    <header>
+    <header class="header_desc">
         <div class="container">
             <div class="top">
                 <a class="logo" href="/"><img src="img/logo.svg" alt="НГК"></a>
@@ -131,6 +131,25 @@
             </div>
         </div>
         <div class="line-head"></div>
+    </header>
+
+    <header class="header-mob">
+        <div class="header-cont">
+            <a href="#menu-drop" class="menu-btn"></a>
+            <div class="overlay"></div>
+            <div class="header-cont_search">
+                <a href="#search-mob" class="header-cont_search_toggle"><img src="img/search.svg" alt="поиск"></a>
+            </div>
+            <div class="header-cont_logo">
+                <img src="img/logo.svg" alt="лого">
+            </div>
+            <div class="header-cont_tel">
+                <a href="tel:+74957817777"><img src="img/tel-mob.svg" alt="телефон"></a>
+            </div>
+            <div class="header-cont_basket">
+                <a href="/basket.html"><img src="img/basket.svg" alt="корзина"></a>
+            </div>
+        </div>
     </header>
 
     <!-- Хлебные крошки -->
@@ -334,6 +353,14 @@
                 </aside>
             </div>
             <div class="output">
+                <div class="output__btn-mob">
+                    <a href="#brands-mob" class="output__btn-mob__brands">
+                        бренды <img src="img/arrow-mob-btn.svg" alt="стрелка">
+                    </a>
+                    <a href="#filter-mob" class="output__btn-mob__filter">
+                        показать фильтр <img src="img/filter-mob.svg" alt="фильтр">
+                    </a>
+                </div>
                 <div class="output__header">
                     <h3>334 товара</h3>
                     <div class="output__sort">
@@ -343,6 +370,11 @@
                         <a href="#" class="link">по цене</a>
                         <a href="#" class="link">по названию</a>
                     </div>
+                    <select class="select_sort_mob" name="sort" id="sort-mob">
+                        <option>По популярности</option>
+                        <option>По цене</option>
+                        <option>По названию</option>
+                    </select>
                 </div>
                 <div class="output__products">
                     <a href="#" class="output__products__prod">
@@ -1386,6 +1418,352 @@
     </div>
 
     <!-- Конец "Попап с выпадом каталога" -->
+    <!-- Попап с выпадом меню бургер -->
+    <div class="popup_menu-drop" id="menu-drop">
+        <a href="#" class="popup_close"></a>
+        <a href="#" class="popup_area"></a>
+        <div class="popup_menu__body">
+            <details class="popup_menu_catalog">
+                <summary>
+                    <a class="popup_menu_catalog_toggle">каталог</a>
+                </summary>
+                <ul class="popup_menu_catalog__dropdown">
+                    <li class="popup_menu__dropdown">
+                        <a href="#" class="popup_menu__dropdown-toggle">Leica пример 1</a>
+                        <ul class="popup_menu__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="popup_menu__dropdown">
+                        <a href="#" class="popup_menu__dropdown-toggle">Leica пример 2</a>
+                        <ul class="popup_menu__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="popup_menu__dropdown">
+                        <a href="#" class="popup_menu__dropdown-toggle">Leica пример 3</a>
+                        <ul class="popup_menu__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="popup_menu__dropdown">
+                        <a href="#" class="popup_menu__dropdown-toggle">Leica пример 4</a>
+                        <ul class="popup_menu__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="popup_menu__dropdown">
+                        <a href="#" class="popup_menu__dropdown-toggle">Leica пример 5</a>
+                        <ul class="popup_menu__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="popup_menu__dropdown">
+                        <a href="#" class="popup_menu__dropdown-toggle">Leica пример 6</a>
+                        <ul class="popup_menu__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="popup_menu__dropdown">
+                        <a href="#" class="popup_menu__dropdown-toggle">Leica пример 7</a>
+                        <ul class="popup_menu__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="popup_menu__dropdown">
+                        <a href="#" class="popup_menu__dropdown-toggle">Leica пример 8</a>
+                        <ul class="popup_menu__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </details>
+            <ul class="popup_menu__output">
+                <li>
+                    <details class="popup_menu__output__det">
+                        <summary class="popup_menu__output__det_sum"><a class="popup_menu__output__toggle">О
+                                компании</a></summary>
+                        <a href="#">история</a>
+                        <a href="#">реквизиты</a>
+                        <a href="#">презентация</a>
+                        <a href="#">Вакансии</a>
+                    </details>
+                </li>
+                <li>
+                    <details class="popup_menu__output__det">
+                        <summary class="popup_menu__output__det_sum"><a class="popup_menu__output__toggle">поддержка</a>
+                        </summary>
+                        <a href="#">история</a>
+                        <a href="#">реквизиты</a>
+                        <a href="#">презентация</a>
+                        <a href="#">Вакансии</a>
+                    </details>
+                </li>
+                <li>
+                    <details class="popup_menu__output__det">
+                        <summary class="popup_menu__output__det_sum"><a class="popup_menu__output__toggle">сервис</a>
+                        </summary>
+                        <a href="#">история</a>
+                        <a href="#">реквизиты</a>
+                        <a href="#">презентация</a>
+                        <a href="#">Вакансии</a>
+                    </details>
+                </li>
+                <li><a href="#">контакты</a></li>
+            </ul>
+            <div class="popup_menu__tel">
+                <div class="popup_menu__tel1">
+                    <p class="popup_menu__tel_p1">+7 (495) 781 7777</p>
+                    <p class="popup_menu__tel_p2">Сервисный центр</p>
+                </div>
+                <div class="popup_menu__tel2">
+                    <p class="popup_menu__tel_p1">+7 (495) 781 7799</p>
+                    <p class="popup_menu__tel_p2">Техническая поддержка</p>
+                </div>
+            </div>
+            <div class="popup_menu__line-cont">
+                <div class="popup_menu__line"></div>
+            </div>
+            <div class="popup_menu__mail">
+                <p class="popup_menu__mail_p">Написать нам: </p>
+                <a href="mailto:INFO@NGCM.RU" class="link">INFO@NGCM.RU</a>
+            </div>
+        </div>
+    </div>
+    <!-- Конец "Попап с выпадом меню бургер" -->
+
+    <!-- Попап с выпадом поиска -->
+    <div class="popup_menu-drop" id="search-mob">
+        <a href="#" class="popup_close"></a>
+        <a href="#" class="popup_area"></a>
+        <div class="popup_menu__body">
+            <form class="search-mob" action="#" method="get">
+                <input type="search" placeholder="Введите название или артикул">
+            </form>
+        </div>
+    </div>
+    <!-- Конец "Попап с выпадом поиска" -->
+
+    <!-- Попап с выпадом брендов -->
+    <div class="popup_menu-drop" id="brands-mob">
+        <a href="#" class="popup_close"></a>
+        <a href="#" class="popup_area"></a>
+        <div class="popup_menu__body">
+            <aside id="brands">
+                <ul class="brands__list">
+                    <li class="brands__dropdown">
+                        <a href="#" class="brands__dropdown-toggle">Leica</a>
+                        <ul class="brands__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="brands__dropdown">
+                        <a href="#" class="brands__dropdown-toggle">GeoMax</a>
+                        <ul class="brands__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="brands__dropdown">
+                        <a href="#" class="brands__dropdown-toggle">Trimble</a>
+                        <ul class="brands__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="brands__dropdown">
+                        <a href="#" class="brands__dropdown-toggle">Sokkia</a>
+                        <ul class="brands__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="brands__dropdown">
+                        <a href="#" class="brands__dropdown-toggle">South</a>
+                        <ul class="brands__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="brands__dropdown">
+                        <a href="#" class="brands__dropdown-toggle">FOIF</a>
+                        <ul class="brands__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="brands__dropdown">
+                        <a href="#" class="brands__dropdown-toggle">Ruide</a>
+                        <ul class="brands__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="brands__dropdown">
+                        <a href="" class="brands__dropdown-toggle">Nikon</a>
+                        <ul class="brands__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+    <!-- Конец "Попап брендов" -->
+
+    <!-- Попап с выпадом фильтра -->
+    <div class="popup_menu-drop" id="filter-mob">
+        <a href="#" class="popup_close"></a>
+        <a href="#" class="popup_area"></a>
+        <div class="popup_menu__body">
+            <aside id="filter">
+                <form method="get" action="#">
+                    <div class="filt" style="margin-top: -18px;">
+                        <p class="h4">Цена,₽</p>
+                        <div class="filt__price">
+                            <label>От<input type="number" placeholder="600 000"></label>
+                            <div class="filt__price_dash">—</div>
+                            <label>До<input type="number" placeholder="1 500000"></label>
+                        </div>
+                    </div>
+                    <div class="filt">
+                        <p class="h4">Длинное название параметра фильтра</p>
+                        <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="Indigo" checked>
+                            <label for="Indigo">Indigo</label>
+                        </div>
+                        <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="Nikon">
+                            <label for="Nikon">Nikon</label>
+                        </div>
+                        <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="South">
+                            <label for="South">South</label>
+                        </div>
+                        <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="PrinCe">
+                            <label for="PrinCe">PrinCe</label>
+                        </div>
+                        <div class="checkbox">
+                            <input class="custom-checkbox" type="checkbox" id="check-disabled" disabled>
+                            <label for="check-disabled">Пример с check disabled</label>
+                        </div>
+                    </div>
+                    <div class="filt">
+                        <p class="h4">Пример check в 2 столбика</p>
+                        <div class="checkbox checkboxes">
+                            <input class="custom-checkbox" type="checkbox" id="100" checked>
+                            <label for="100">100</label>
+                            <input class="custom-checkbox" type="checkbox" id="800">
+                            <label for="800">800</label>
+                        </div>
+                        <div class="checkbox checkboxes">
+                            <input class="custom-checkbox" type="checkbox" id="150">
+                            <label for="150">150</label>
+                            <input class="custom-checkbox" type="checkbox" id="1300">
+                            <label for="1300">1300</label>
+                        </div>
+                        <div class="checkbox checkboxes">
+                            <input class="custom-checkbox" type="checkbox" id="350">
+                            <label for="350">350</label>
+                        </div>
+                    </div>
+                    <div class="filt">
+                        <p class="h4">Пример с radio</p>
+                        <div class="radio">
+                            <input class="custom-radio" type="radio" name="radio" id="primer-1" checked>
+                            <label for="primer-1">Primer 1</label>
+                        </div>
+                        <div class="radio">
+                            <input class="custom-radio" type="radio" name="radio" id="primer-2">
+                            <label for="primer-2">Пример 2</label>
+                        </div>
+                        <div class="radio">
+                            <input class="custom-radio" type="radio" name="radio" id="primer-3">
+                            <label for="primer-3">Пример 3</label>
+                        </div>
+                        <div class="radio">
+                            <input class="custom-radio" type="radio" name="radio" id="radio-disabled" disabled>
+                            <label for="radio-disabled">Пример radio disabled</label>
+                        </div>
+                    </div>
+                    <div class="filt">
+                        <p class="h4">Пример с radio в 2 столбика</p>
+                        <div class="radio radios">
+                            <input class="custom-radio" type="radio" name="radio2" id="yes" checked>
+                            <label for="yes">Есть</label>
+                            <input class="custom-radio" type="radio" name="radio2" id="no">
+                            <label for="no">Нет</label>
+                        </div>
+                        <div class="radio radios">
+                            <input class="custom-radio" type="radio" name="radio2" id="maybe">
+                            <label for="maybe">Наверное</label>
+                        </div>
+                    </div>
+                    <button type="submit" class="off-btn">Сбросить фильтр</button>
+                </form>
+            </aside>
+        </div>
+    </div>
+    <!-- Конец "Попап с выпадом фильтра" -->
 
     <script defer type="text/javascript" src="js/ngk-category.js"></script>
 </body>

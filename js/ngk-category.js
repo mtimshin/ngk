@@ -36,3 +36,33 @@ document.querySelectorAll('.brands__dropdown-toggle').forEach(function(link) {
   });
 });
 
+// Прилипающее меню моб
+const header = document.querySelector('.header-mob');
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 0) {
+    header.classList.add('sticky');
+  } else {
+    header.classList.remove('sticky');
+  }
+}); 
+
+// Дропдаун у меню моб
+const dropdownElements = document.querySelectorAll('.popup_menu__dropdown');
+const toggleButtons = document.querySelectorAll('.popup_menu__dropdown-toggle');
+
+for(let i = 0; i < toggleButtons.length; i++) {
+  toggleButtons[i].addEventListener('click', function() {
+    dropdownElements[i].classList.toggle('open');
+  });
+
+  dropdownElements[i].addEventListener('blur', function() {
+    this.classList.remove('open');
+  });
+}
+
+const links = document.querySelectorAll('.popup_menu__dropdown-toggle');
+for(let i = 0; i < links.length; i++) {
+  links[i].addEventListener('click', function(event) {
+    event.preventDefault();
+  });
+}
