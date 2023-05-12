@@ -296,6 +296,15 @@ body {
     font-family: "Manrope", Helvetica, sans-serif;
 }
 
+@media (max-width: 1070px) {
+    .body {
+        width: 360px;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+}
+
+
 .container {
     width: 1068px;
     margin: 0 auto;
