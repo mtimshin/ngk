@@ -13,31 +13,6 @@ window.addEventListener('scroll', function() {
   }
 });
 
-// Дропдаун у поиска
-const dropdowns = document.querySelectorAll('.header-cont_search');
-const dropdownToggles = document.querySelectorAll('.header-cont_search_toggle');
-const dropdownCloses = document.querySelectorAll('.header-cont_search_close'); // получаем все элементы с крестиком
-
-dropdownToggles.forEach(function(dropdownToggle, index) {
-  dropdownToggle.addEventListener('click', function() {
-    dropdowns[index].classList.toggle('open');
-  });
-
-  dropdowns[index].addEventListener('blur', function() {
-    this.classList.remove('open');
-  });
-  
-  dropdownCloses[index].addEventListener('click', function() { // добавляем обработчик события клика на элемент с крестиком
-    dropdowns[index].classList.remove('open');
-  });
-});
-
-document.querySelectorAll('.header-cont_search_toggle').forEach(function(link) {
-  link.addEventListener('click', function(event) {
-    event.preventDefault();
-  });
-});
-
 
 
 // Свайпер слайдеры
@@ -117,39 +92,25 @@ const licenSlider = new Swiper('.licen_swiper-container', {
 });
 
 
-// Меню бургер (для мобильного)
-const menuBtn = document.querySelector('.menu-btn');
-const closeBtn = document.querySelector('.close-btn');
-const menuList = document.querySelector('.menu-list');
-const overlay = document.querySelector('.overlay'); // добавлено
+// Дропдаун у меню моб
+const dropdowns = document.querySelectorAll('.popup_menu__dropdown');
+const dropdownToggles = document.querySelectorAll('.popup_menu__dropdown-toggle');
 
-menuBtn.addEventListener('click', () => {
-  menuList.style.display = 'flex';
-  closeBtn.style.display = 'block';
-  overlay.style.display = 'block'; // добавлено
+dropdownToggles.forEach(function(dropdownToggle, index) {
+  dropdownToggle.addEventListener('click', function() {
+    dropdowns[index].classList.toggle('open');
+  });
+
+  dropdowns[index].addEventListener('blur', function() {
+    this.classList.remove('open');
+  });
 });
 
-closeBtn.addEventListener('click', () => {
-  menuList.style.display = 'none';
-  closeBtn.style.display = 'none';
-  overlay.style.display = 'none'; // добавлено
+document.querySelectorAll('.popup_menu__dropdown-toggle').forEach(function(link) {
+  link.addEventListener('click', function(event) {
+    event.preventDefault();
+  });
 });
 
-overlay.addEventListener('click', () => { // добавлено
-  menuList.style.display = 'none';
-  closeBtn.style.display = 'none';
-  overlay.style.display = 'none';
-});
 
-const button = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.menu-list');
 
-button.addEventListener('click', () => {
-  menu.classList.toggle('hide');
-});
-
-menu.addEventListener('animationend', () => {
-  if (menu.classList.contains('hide')) {
-    menu.style.display = 'none';
-  }
-});

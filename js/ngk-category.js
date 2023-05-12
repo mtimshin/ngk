@@ -36,39 +36,3 @@ document.querySelectorAll('.brands__dropdown-toggle').forEach(function(link) {
   });
 });
 
-// Меню бургер (для мобильного)
-const menuBtn = document.querySelector('.menu-btn');
-const closeBtn = document.querySelector('.close-btn');
-const menuList = document.querySelector('.menu-list');
-const overlay = document.querySelector('.overlay'); // добавлено
-
-menuBtn.addEventListener('click', () => {
-  menuList.style.display = 'flex';
-  closeBtn.style.display = 'block';
-  overlay.style.display = 'block'; // добавлено
-});
-
-closeBtn.addEventListener('click', () => {
-  menuList.style.display = 'none';
-  closeBtn.style.display = 'none';
-  overlay.style.display = 'none'; // добавлено
-});
-
-overlay.addEventListener('click', () => { // добавлено
-  menuList.style.display = 'none';
-  closeBtn.style.display = 'none';
-  overlay.style.display = 'none';
-});
-
-const button = document.querySelector('.menu-toggle');
-const menu = document.querySelector('.menu-list');
-
-button.addEventListener('click', () => {
-  menu.classList.toggle('hide');
-});
-
-menu.addEventListener('animationend', () => {
-  if (menu.classList.contains('hide')) {
-    menu.style.display = 'none';
-  }
-});
