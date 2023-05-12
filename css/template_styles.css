@@ -305,7 +305,7 @@ body {
 
 @media (max-width: 1070px) {
     .container {
-        width: 375px;
+        width: 350px;
         padding: 0 12px;
         margin: 0 auto;
         overflow: hidden;
