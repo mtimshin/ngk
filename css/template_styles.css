@@ -297,10 +297,8 @@ body {
 }
 
 @media (max-width: 1070px) {
-    .body {
-        width: 360px;
-        overflow: hidden;
-        margin: 0 auto;
+    html, body {
+        overflow-x: hidden;
     }
 }
 
@@ -387,6 +385,7 @@ body {
 }
 
 .popup_menu__body {
+    position: absolute;
     margin: 60px auto 14px auto;
     left: 50%;
     transform: translateX(-50%);

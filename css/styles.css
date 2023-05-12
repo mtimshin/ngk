@@ -645,7 +645,7 @@ li {
         width: 40px;
         height: 40px;
         top: 18px;
-        left: 256px;
+        left: 282px;
     }
 }
 
@@ -664,14 +664,14 @@ li {
 @media (max-width: 1070px) {
     .slider-head_next {
         top: 18px;
-        left: 256px;
+        left: 277px;
     }
 }
 
 @media (max-width: 1070px) {
     .slider-head_prev {
         top: 18px;
-        left: 217px;
+        left: 238px;
         transform: rotate(180deg);
     }
 }
