@@ -138,10 +138,7 @@
             <a href="#menu-drop" class="menu-btn"></a>
             <div class="overlay"></div>
             <div class="header-cont_search">
-                <a href="#" class="header-cont_search_toggle"><img src="img/search.svg" alt="поиск"></a>
-                <form class="search-mob" action="#" method="get">
-                    <input type="search" placeholder="Введите название или артикул">
-                </form>
+                <a href="#search-mob" class="header-cont_search_toggle"><img src="img/search.svg" alt="поиск"></a>
             </div>
             <div class="header-cont_logo">
                 <img src="img/logo.svg" alt="лого">
@@ -235,7 +232,7 @@
 
     <!-- Каталог -->
     <div class="gray-bg">
-        <div class="container catalog-home">
+        <div class="catalog-home container">
             <h2>Каталог продукции</h2>
             <div class="catalog-home_swiper-container swiper-container">
                 <div class="swiper-wrapper">
@@ -771,7 +768,7 @@
 
     <!-- Лицензии -->
     <div class="container catalog-home">
-        <h2>Лицензии и сертификаты</h2>
+        <h2>Лицензии</h2>
         <div class="licen_swiper-container swiper-container">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -1129,11 +1126,83 @@
         <a href="#" class="popup_close"></a>
         <a href="#" class="popup_area"></a>
         <div class="popup_menu__body">
-            <div class="popup_menu_catalog">
-                <a href="#" class="popup_menu_catalog_toggle">каталог</a>
-                <ul>
+            <details class="popup_menu_catalog">
+                <summary>
+                    <a class="popup_menu_catalog_toggle">каталог</a>
+                </summary>
+                <ul class="popup_menu_catalog__dropdown">
                     <li class="popup_menu__dropdown">
-                        <a href="#" class="popup_menu__dropdown-toggle">Leica</a>
+                        <a href="#" class="popup_menu__dropdown-toggle">Leica пример 1</a>
+                        <ul class="popup_menu__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="popup_menu__dropdown">
+                        <a href="#" class="popup_menu__dropdown-toggle">Leica пример 2</a>
+                        <ul class="popup_menu__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="popup_menu__dropdown">
+                        <a href="#" class="popup_menu__dropdown-toggle">Leica пример 3</a>
+                        <ul class="popup_menu__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="popup_menu__dropdown">
+                        <a href="#" class="popup_menu__dropdown-toggle">Leica пример 4</a>
+                        <ul class="popup_menu__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="popup_menu__dropdown">
+                        <a href="#" class="popup_menu__dropdown-toggle">Leica пример 5</a>
+                        <ul class="popup_menu__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="popup_menu__dropdown">
+                        <a href="#" class="popup_menu__dropdown-toggle">Leica пример 6</a>
+                        <ul class="popup_menu__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="popup_menu__dropdown">
+                        <a href="#" class="popup_menu__dropdown-toggle">Leica пример 7</a>
+                        <ul class="popup_menu__dropdown-menu">
+                            <li><a href="#">Leica TS03</a></li>
+                            <li><a href="#">Leica TS08</a></li>
+                            <li><a href="#">Leica TS07</a></li>
+                            <li><a href="#">Leica TS107</a></li>
+                            <li><a href="#">Все модели</a></li>
+                        </ul>
+                    </li>
+                    <li class="popup_menu__dropdown">
+                        <a href="#" class="popup_menu__dropdown-toggle">Leica пример 8</a>
                         <ul class="popup_menu__dropdown-menu">
                             <li><a href="#">Leica TS03</a></li>
                             <li><a href="#">Leica TS08</a></li>
@@ -1143,7 +1212,7 @@
                         </ul>
                     </li>
                 </ul>
-            </div>
+            </details>
             <ul class="popup_menu__output">
                 <li><a href="#">О компании</a></li>
                 <li><a href="#">поддержка</a></li>
@@ -1171,6 +1240,17 @@
     </div>
     <!-- Конец "Попап с выпадом меню бургер" -->
 
+    <!-- Попап с выпадом поиска -->
+    <div class="popup_menu-drop" id="search-mob">
+        <a href="#" class="popup_close"></a>
+        <a href="#" class="popup_area"></a>
+        <div class="popup_menu__body">
+            <form class="search-mob" action="#" method="get">
+                <input type="search" placeholder="Введите название или артикул">
+            </form>
+        </div>
+    </div>
+    <!-- Конец "Попап с выпадом поиска" -->
     <script defer type="text/javascript" src="js/ngk-index.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
 </body>

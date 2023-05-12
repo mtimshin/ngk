@@ -305,7 +305,7 @@ body {
 
 @media (max-width: 1070px) {
     .container {
-        width: 320px;
+        width: 375px;
         padding: 0 12px;
         margin: 0 auto;
         overflow: hidden;
@@ -351,7 +351,8 @@ body {
     margin: 0 auto;
 }
 
-#menu-drop .popup_close {
+#menu-drop .popup_close,
+#search-mob .popup_close {
     left: 12px;
 }
 
@@ -376,21 +377,22 @@ body {
     visibility: visible;
 }
 
-.popup_search__body {
-    position: relative;
+.popup_menu__body {
     margin: 60px auto 14px auto;
     left: 50%;
     transform: translateX(-50%);
+    width: 375px;
+    overflow: hidden;
 }
 
-.popup_search__output {
+.popup_menu__output {
     min-width: 320px;
     max-width: 768px;
     box-sizing: border-box;
     padding: 0 12px;
 }
 
-.popup_search__output li a {
+.popup_menu__output li a {
     color: white;
     font-weight: 800;
     font-size: 10px;
@@ -399,16 +401,16 @@ body {
     text-transform: uppercase;
 }
 
-.popup_search__output li {
-    padding: 10px 0 10px 0;
+.popup_menu__output li {
+    padding: 14px 0 10px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.popup_search__output li:last-child {
+.popup_menu__output li:last-child {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.popup_search__tel {
+.popup_menu__tel {
     display: flex;
     min-width: 320px;
     max-width: 500px;
@@ -416,7 +418,7 @@ body {
     box-sizing: border-box;
 }
 
-.popup_search__tel_p1 {
+.popup_menu__tel_p1 {
     font-weight: 800;
     font-size: 12px;
     line-height: 16px;
@@ -426,7 +428,7 @@ body {
     margin: 0;
 }
 
-.popup_search__tel_p2 {
+.popup_menu__tel_p2 {
     font-weight: 500;
     font-size: 10px;
     line-height: 16px;
@@ -435,31 +437,30 @@ body {
     margin: 0;
 }
 
-.popup_search__tel1 {
+.popup_menu__tel1 {
     margin-right: 67px;
 }
 
-.popup_search__line-cont {
-    min-width: 320px;
-    max-width: 768px;
+.popup_menu__line-cont {
+    width: 375px;
     padding: 0 12px;
     margin-bottom: 20px;
     box-sizing: border-box;
 }
 
-.popup_search__line {
+.popup_menu__line {
     height: 1px;
     background-color: white;
     opacity: 0.5;
 }
 
-.popup_search__mail {
+.popup_menu__mail {
     display: flex;
     padding: 0 12px;
     gap: 6px;
 }
 
-.popup_search__mail_p {
+.popup_menu__mail_p {
     font-weight: 400;
     font-size: 11px;
     line-height: 14px;
@@ -468,9 +469,134 @@ body {
     margin: 0;
 }
 
-.popup_search__mail .link {
+.popup_menu__mail .link {
     color: #99A7AF;
     line-height: 14px;
+}
+
+.popup_menu_catalog {
+    margin: 0 12px 26px 12px;
+    max-width: 740px;
+    border: 1px solid white;
+    box-sizing: border-box;
+    padding: 20px;
+}
+&
+.popup_menu_catalog__dropdown .popup_menu__dropdown {
+    display: none;
+}
+
+.popup_menu_catalog_toggle {
+    display: block;
+    font-style: normal;
+font-weight: 800;
+font-size: 10px;
+line-height: 14px;
+color: white;
+letter-spacing: 0.5px;
+text-transform: uppercase;
+}
+
+.popup_menu__dropdown-toggle:hover {
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.popup_menu__dropdown.open .popup_menu__dropdown-menu {
+    display: block;
+}
+
+.popup_menu__dropdown-toggle::after {
+    content: url('../img/arrow-brands.svg');
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+    float: right;
+}
+
+.popup_menu__dropdown.open .popup_menu__dropdown-toggle::after {
+    transform: rotate(180deg);
+    margin-top: 3px;
+}
+
+.popup_menu__dropdown .popup_menu__dropdown-menu {
+    display: none;
+}
+
+.popup_menu__dropdown {
+    margin: 10px 0 5px 0
+}
+
+.popup_menu__dropdown-menu {
+    margin-top: 4px;
+}
+
+.popup_menu__dropdown-menu li a {
+    color: white;
+}
+
+.popup_menu__dropdown-toggle {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.3px;
+    color: #FFFFFF;
+}
+
+.popup_menu__dropdown-toggle:hover {
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.popup_menu__dropdown.open .popup_menu__dropdown-menu {
+    display: block;
+}
+
+.popup_menu__dropdown-toggle::after {
+    content: url('../img/arrow-brands.svg');
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+    float: right;
+}
+
+.popup_menu_catalog_toggle::after {
+    content: url('../img/arrow-brands.svg');
+    display: inline-block;
+    margin-left: 5px;
+    vertical-align: middle;
+    float: right;
+}
+
+details[open] .popup_menu_catalog_toggle::after {
+    transform: rotate(180deg);
+    margin-top: 3px;
+}
+
+.popup_menu_catalog_toggle:hover {
+    opacity: 0.5;
+    color: white;
+}
+
+.popup_menu__dropdown.open .popup_menu__dropdown-toggle::after {
+    transform: rotate(180deg);
+    margin-top: 3px;
+}
+
+.popup_menu__dropdown-menu li a {
+    line-height: 24px;
+    color: white;
+}
+
+.popup_menu__dropdown-menu li a:hover {
+    color: white;
+    opacity: 0.5;
+}
+
+.popup_menu__dropdown-menu li {
+    padding-left: 18px;
+    border-left: 1px solid white;
 }
 
 .menu-btn {
@@ -627,7 +753,10 @@ input {
 @media (max-width: 1070px) {
     input {
         height: 40px;
+        width: 320px;
         padding: 12px 14px;
+        background: url(../img/search.svg) no-repeat 289px 9px;
+        background-color: white;
     }
 }
 
