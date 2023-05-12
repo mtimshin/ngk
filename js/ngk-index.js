@@ -13,83 +13,15 @@ window.addEventListener('scroll', function() {
   }
 });
 
-
-
-// Свайпер слайдеры
-const firstscreenSlider = new Swiper('.slider-head__line', {
-    navigation: {
-        nextEl: '.slider-head_next',
-        prevEl: '.slider-head_prev'
-    },
-
-    loop: true,
-    slidesPerGroup: 1,
-});
-
-const catalogSlider = new Swiper('.catalog-home_swiper-container', {
-    navigation: {
-        nextEl: '.next',
-        prevEl: '.prev'
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    breakpoints: {
-        900: {
-            slidesPerView: 2,
-        },
-        1070: {
-          slidesPerView: 4,
-        },
-    },
-    loop: true,
-    slidesPerGroup: 4,
-});
-
-
-
-const newsSlider = new Swiper('.news_swiper-container', {
-    navigation: {
-        nextEl: '.next',
-        prevEl: '.prev'
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    breakpoints: {
-        1069: {
-          slidesPerView: 2,
-        },
-        1070: {
-          slidesPerView: 4,
-        },
-    },
-    loop: true,
-    slidesPerGroup: 4,
-});
-
-const licenSlider = new Swiper('.licen_swiper-container', {
-    navigation: {
-        nextEl: '.next',
-        prevEl: '.prev'
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-    breakpoints: {
-        1069: {
-          slidesPerView: 2,
-        },
-        1070: {
-          slidesPerView: 4,
-        },
-    },
-    loop: true,
-    slidesPerGroup: 4,
-});
+// Прилипающее меню моб
+const header = document.querySelector('.header-mob');
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 0) {
+    header.classList.add('sticky');
+  } else {
+    header.classList.remove('sticky');
+  }
+}); 
 
 
 // Дропдаун у меню моб
@@ -111,6 +43,84 @@ document.querySelectorAll('.popup_menu__dropdown-toggle').forEach(function(link)
     event.preventDefault();
   });
 });
+
+
+// Свайпер слайдеры
+const firstscreenSlider = new Swiper('.slider-head__line', {
+    navigation: {
+        nextEl: '.slider-head_next',
+        prevEl: '.slider-head_prev'
+    },
+
+    loop: true,
+    slidesPerGroup: 1,
+});
+
+const catalogSlider = new Swiper('.catalog-home_swiper-container', {
+    navigation: {
+        nextEl: '.next',
+        prevEl: '.prev'
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: false,
+    },
+    breakpoints: {
+        1069: {
+          slidesPerView: 2,
+          slidesPerGroup: 2,
+        },
+        1070: {
+          slidesPerView: 4,
+        },
+    },
+    loop: true,
+});
+
+
+
+const newsSlider = new Swiper('.news_swiper-container', {
+    navigation: {
+        nextEl: '.next',
+        prevEl: '.prev'
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        1069: {
+          slidesPerView: 2,
+          slidesPerGroup: 1,
+        },
+        1070: {
+          slidesPerView: 4,
+        },
+    },
+    loop: true,
+});
+
+const licenSlider = new Swiper('.licen_swiper-container', {
+    navigation: {
+        nextEl: '.next',
+        prevEl: '.prev'
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        1069: {
+          slidesPerView: 2,
+          slidesPerGroup: 1,
+        },
+        1070: {
+          slidesPerView: 4,
+        },
+    },
+    loop: true,
+});
+
 
 
 
