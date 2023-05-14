@@ -2315,7 +2315,8 @@ span:hover {
     }
 }
 
-#brands {
+#brands,
+#brands-mob_cont {
     width: 230px;
     background: #506F80;
     padding: 30px 30px 8px 30px;
@@ -2381,13 +2382,15 @@ span:hover {
     border-left: 1px solid white;
 }
 
-#filter {
+#filter,
+#filter-mob_cont {
     margin-top: 23px;
     width: 230px;
     background: #F1F6FB;
     box-sizing: border-box;
     padding: 30px;
 }
+
 
 #filter .h4 {
     margin: 0 0 13px 0;
@@ -2786,8 +2789,8 @@ span:hover {
     margin-top: 30px;
 }
 
-#filter-mob #filter,
-#brands-mob #brands {
+#filter-mob_cont,
+#brands-mob_cont {
     margin-bottom: 24px;
 }
 

@@ -184,7 +184,7 @@
                 </div>
                 <div class="count">
                     <span class="count_m"></span>
-                    <input type="text" value="1" class="count_i">
+                    <input type="number" value="1" class="count_i">
                     <span class="count_p"></span>
                 </div>
                 <div class="basket-list__price">
@@ -192,7 +192,7 @@
                         1 390 000 ₽
                     </p>
                 </div>
-                <a href="#"></a><img class="basket-list__del" src="img/del.svg" alt="Удалить"></a>
+                <a href="#"><img class="basket-list__del" src="img/del.svg" alt="Удалить"></a>
             </li>
             <li>
                 <img class="basket-list__img-prod" src="demo/cat6.webp" alt="Leica">
@@ -203,7 +203,7 @@
                 </div>
                 <div class="count">
                     <span class="count_m"></span>
-                    <input type="text" value="1" class="count_i">
+                    <input type="number" value="1" class="count_i">
                     <span class="count_p"></span>
                 </div>
                 <div class="basket-list__price">
@@ -211,7 +211,7 @@
                         1 390 000 ₽
                     </p>
                 </div>
-                <a href="#"></a><img class="basket-list__del" src="img/del.svg" alt="Удалить"></a>
+                <a href="#"><img class="basket-list__del" src="img/del.svg" alt="Удалить"></a>
             </li>
         </ul>
     </div>
@@ -222,11 +222,11 @@
         <div class="order__form">
             <p class="h3">Ваши данные</p>
             <div class="order__form__row1">
-                <label for="name">Ваше имя<input type="text"></label>
-                <label for="tel">Ваш телефон<input type="number" placeholder="+7 (___) ___-__-__"></label>
-                <label for="mail">Ваш e-mail<input type="text"></label>
+                <label for="name">Ваше имя<input type="text" id="name" ></label>
+                <label for="tel">Ваш телефон<input type="number" id="tel" placeholder="+7 (___) ___-__-__"></label>
+                <label for="email">Ваш e-mail<input type="email" id="email"></label>
             </div>
-            <label style="margin-top: 20px;" for="textarea">Комментарий к заказу<textarea type="text"></textarea></label>
+            <label style="margin-top: 20px;" for="textarea">Комментарий к заказу<textarea type="textarea" id="textarea"></textarea></label>
         </div>
         <div class="order__total">
             <p class="h3">Итого</p>

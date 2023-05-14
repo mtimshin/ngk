@@ -294,19 +294,19 @@
             </h2>
             <form action="/" method="get">
                 <div class="feedback_row1">
-                    <label for="name">Ваше имя<input type="text" /></label>
-                    <label for="mail">Ваш e-mail<input type="mail" /></label>
+                    <label for="name">Ваше имя<input type="text" id="name" /></label>
+                    <label for="email">Ваш e-mail<input type="email" id="email" /></label>
                 </div>
                 <div class="feedback_row2">
-                    <label for="tel">Ваш телефон<input type="number" placeholder="+7 (___) ___-__-__" /></label>
+                    <label for="tel">Ваш телефон<input type="number" placeholder="+7 (___) ___-__-__" id="tel" /></label>
                 </div>
                 <div class="feedback_row3">
-                    <label for="tel">Ваше сообщение<textarea name="comment" id="#" cols="30" rows="10"></textarea>
+                    <label for="comment">Ваше сообщение<textarea name="comment" id="comment" cols="30" rows="10"></textarea>
                     </label>
                 </div>
                 <div class="feedback_row4">
-                    <label class="input-file">
-                        <input type="file" name="file" />
+                    <label for="file" class="input-file">
+                        <input type="file" name="file" id="file" />
                         <span class="input-file-btn">Прикрепить файл</span>
                         <span class="input-file-text">* макс. весь файла 5мб, форматы: .pdf. doc. jpg .png</span>
                     </label>

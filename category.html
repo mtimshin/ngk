@@ -269,9 +269,9 @@
                         <div class="filt" style="margin-top: -18px;">
                             <p class="h4">Цена,₽</p>
                             <div class="filt__price">
-                                <label>От<input type="number" placeholder="600 000"></label>
+                                <label for="cena-ot">От<input type="number" placeholder="600 000" id="cena-ot"></label>
                                 <div class="filt__price_dash">—</div>
-                                <label>До<input type="number" placeholder="1 500000"></label>
+                                <label for="cena-do">До<input type="number" placeholder="1 500000" id="cena-do"></label>
                             </div>
                         </div>
                         <div class="filt">
@@ -1576,12 +1576,12 @@
     </div>
     <!-- Конец "Попап с выпадом поиска" -->
 
-    <!-- Попап с выпадом брендов -->
+    <!-- Попап с выпадом брендов моб -->
     <div class="popup_menu-drop" id="brands-mob">
         <a href="#" class="popup_close"></a>
         <a href="#" class="popup_area"></a>
         <div class="popup_menu__body">
-            <aside id="brands">
+            <aside id="brands-mob_cont">
                 <ul class="brands__list">
                     <li class="brands__dropdown">
                         <a href="#" class="brands__dropdown-toggle">Leica</a>
@@ -1667,21 +1667,21 @@
             </aside>
         </div>
     </div>
-    <!-- Конец "Попап брендов" -->
+    <!-- Конец "Попап брендов моб" -->
 
-    <!-- Попап с выпадом фильтра -->
+    <!-- Попап с выпадом фильтра моб-->
     <div class="popup_menu-drop" id="filter-mob">
         <a href="#" class="popup_close"></a>
         <a href="#" class="popup_area"></a>
         <div class="popup_menu__body">
-            <aside id="filter">
+            <aside id="filter-mob_cont">
                 <form method="get" action="#">
                     <div class="filt" style="margin-top: -18px;">
                         <p class="h4">Цена,₽</p>
                         <div class="filt__price">
-                            <label>От<input type="number" placeholder="600 000"></label>
+                            <label for="cena-ot">От<input type="number" placeholder="600 000" id="cena-ot"></label>
                             <div class="filt__price_dash">—</div>
-                            <label>До<input type="number" placeholder="1 500000"></label>
+                            <label for="cena-do">До<input type="number" placeholder="1 500000" id="cena-do"></label>
                         </div>
                     </div>
                     <div class="filt">
@@ -1763,7 +1763,7 @@
             </aside>
         </div>
     </div>
-    <!-- Конец "Попап с выпадом фильтра" -->
+    <!-- Конец "Попап с выпадом фильтра моб" -->
 
     <script defer type="text/javascript" src="js/ngk-category.js"></script>
 </body>
