@@ -1404,7 +1404,7 @@ li {
 
 @media (max-width: 1070px) {
     .gray-bg .container {
-        width: 320px;
+        width: 350px;
         padding: 20px 12px;
     }
 }
@@ -1441,6 +1441,21 @@ li {
         padding-right: 0;
     }
 }
+
+@media (max-width: 1070px) {
+    .about-home_col1 h2 {
+        padding-top: 22px;
+    }
+}
+
+@media (max-width: 1070px) {
+    .licen-home-mob {
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+}
+
+
 
 .about-home_col1 p {
     width: 370px;
