@@ -1380,7 +1380,7 @@ li {
 }
 
 @media (max-width: 1070px) {
-    .catalog-home.container {
+    .catalog-home {
         padding: 20px 12px;
     }
 }
