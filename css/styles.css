@@ -1382,6 +1382,8 @@ li {
 @media (max-width: 1070px) {
     .catalog-home {
         padding: 20px 12px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 }
 
